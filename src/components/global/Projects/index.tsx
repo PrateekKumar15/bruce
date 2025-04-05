@@ -16,16 +16,16 @@ const Projects = ({ projects }: Props) => {
             initial='hidden'
             animate='visible'
         >
-            {/* {projects.map((project, index) => ( */}
+            {projects.map((project, index) => (
                 <ProjectCard key={index}
-                    projectId={projects?.id}
-                    title={projects?.name}
-                    createdAt={projects?.createdAt.toString()}
-                    isDelete={projects?.isDeleted}
-                    slideData={projects?.slides}
-                    themeName={projects.themeName}
+                    projectId={project?.id}
+                    title={project?.title}
+                    createdAt={project?.createdAt.toString()}
+                    isDelete={project?.isDeleted}
+                    slideData={project?.slides}
+                    themeName={project.themeName}
                 />
-            {/* ))} */}
+              ))} 
         </motion.div>
     )
 }

@@ -20,11 +20,11 @@ const DashboardPage = async () => {
       </div>
 
       {/* Return all projects */}
-      {/* {allProjects.data && allProjects.data.length > 0 ? ( */}
+      {allProjects.data !== undefined && allProjects.data.length > 0 ? (
         <Projects projects={allProjects.data} />
-      {/* ) : ( */}
-        {/* <NotFound /> */}
-      {/* )} */}
+      ) : (
+        <NotFound />
+      )}
     </div>
   );
 };
