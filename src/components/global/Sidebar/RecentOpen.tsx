@@ -37,12 +37,12 @@ const RecentOpen = ({ recentProjects }: Props) => {
                 <SidebarMenu>
                     {recentProjects.map((project) => (
                         <SidebarMenuItem key={project.id}>
-                            <SidebarMenuButton asChild tooltip={project.name}
+                            <SidebarMenuButton asChild tooltip={project.title}
                                 className={`hover:bg-primary-80`}>
                                 <Button variant={'link'} className='text-xs items-center justify-start'
                                     onClick={() => handleClick(project.id, project.slides)}
                                 >
-                                    <span>{project.name}</span>
+                                    <span>{project.title}</span>
                                 </Button>
                             </SidebarMenuButton>
                         </SidebarMenuItem>
