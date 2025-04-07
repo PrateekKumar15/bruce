@@ -31,14 +31,14 @@ const AppSidebar = ({ recentProjects, user, ...props }: {
                 <SidebarMenuButton size={'lg'} className='data-[state=open]:text-sidebar-accent-foreground'>
                     <div className='flex aspect-square size-8 items-center justify-center rounded-lg text-sidebar-primary-foreground'>
                         <Avatar className='h-10 w-10 rounded-full'>
-                            <AvatarImage src={'/vivid.png'} alt={`vivid-logo`} />
+                            <AvatarImage src={"./bruce_logo.svg"} alt={`logo`} />
                             <AvatarFallback className='rounded-lg'>
-                                BRUCE
+                                Bruce
                             </AvatarFallback>
                         </Avatar>
                     </div>
                     <span className='truncate text-primary text-3xl font-semibold'>
-                        Vivid
+                        Bruce
                     </span>
                 </SidebarMenuButton>
             </SidebarHeader>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg height="120" style="cursor: pointer" viewBox="0 0 120 120" width="120" xmlns="http://www.w3.org/2000/svg">
+
+<!-- Logo Container -->
+<g>
+<!-- Background Circle -->
+<circle cx="60" cy="60" fill="#0B0B0D" r="56" stroke="#2D2D2D" stroke-width="4"/>
+<!-- Stylized Cursive-Tech 'B' -->
+<path d="M46 35 C56 32, 68 40, 60 50 C70 55, 70 75, 55 77 C50 78, 45 75, 44 72               C43 68, 44 58, 54 57 C61 57, 60 50, 53 48 C47 47, 46 44, 46 35 Z" fill="#FFFFFF" opacity="0.95"/>
+<!-- Slide stack -->
+<g transform="translate(72,32)">
+<rect fill="#FFFFFF" height="12" opacity="0.7" rx="2" width="18" x="0" y="0"/>
+<rect fill="#FFFFFF" height="12" opacity="0.4" rx="2" width="18" x="3" y="4"/>
+<rect fill="#FFFFFF" height="12" opacity="0.2" rx="2" width="18" x="6" y="8"/>
+</g>
+</g>
+</svg>
