@@ -4,7 +4,7 @@
 import { JsonValue } from '@prisma/client/runtime/library'
 import React from 'react'
 import { motion } from 'framer-motion'
-import { itemsVariants, themes } from '@/lib/constants'
+import { itemVariants, themes } from '@/lib/constants'
 import { useRouter } from 'next/navigation'
 import { useSlideStore } from '@/store/useSlideStore'
 import ThumbnailPreview from './ThumbnailPreview'
@@ -111,7 +111,7 @@ const ProjectCard = ({
 
     return (
         <motion.div
-            variants={itemsVariants}
+            variants={itemVariants}
             className={`group w-full flex-flex-col gap-y-3 rounded-xl p-3 transition-colors ${!isDelete && 'hover:bg-muted/50'
                 }`}
         >
