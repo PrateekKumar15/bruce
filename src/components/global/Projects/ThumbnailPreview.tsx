@@ -20,7 +20,7 @@ const ThumbnailPreview = ({ slide, theme }: Props) => {
             }}
         >
             {slide ? (
-                <div className='scale-[0.5] origin-top-left w-[200%] h-[200%] overlfow-hidden'>
+                <div className='scale-[0.5] origin-top-left w-[200%] h-[200%] overflow-hidden'>
                     This is the slide
                 </div>
             ) : (

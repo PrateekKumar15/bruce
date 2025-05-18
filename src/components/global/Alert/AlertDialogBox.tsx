@@ -23,32 +23,33 @@ const AlertDialogBox = ({
     handleOpen
 }: Props) => {
     return (
-        <AlertDialog open={open} onOpenChange={handleOpen}>
-            <AlertDialogTrigger asChild>{children}</AlertDialogTrigger>
-            <AlertDialogContent>
-                <AlertDialogHeader>
-                    <AlertDialogTitle>Are you absolurely sure?</AlertDialogTitle>
-                    <AlertDialogDescription>{description}</AlertDialogDescription>
-                </AlertDialogHeader>
-                <AlertDialogFooter>
-                    <AlertDialogCancel>
-                        Cancel
-                    </AlertDialogCancel>
-                </AlertDialogFooter>
-                <Button
-                    variant={'destructive'}
-                    className={`${classname}`}
-                    onClick={onClick}
-                >
-                    {loading ?
-                        <>
-                            <Loader2 className='animate-spin' />
-                            Loading...
-                        </> : 'Continue'}
-                </Button>
-            </AlertDialogContent>
-        </AlertDialog>
-    )
+      <AlertDialog open={open} onOpenChange={handleOpen}>
+        <AlertDialogTrigger asChild>{children}</AlertDialogTrigger>
+        <AlertDialogContent>
+          <AlertDialogHeader>
+            <AlertDialogTitle>Are you absolurely sure?</AlertDialogTitle>
+            <AlertDialogDescription>{description}</AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <Button
+              variant={"destructive"}
+              className={`${classname}`}
+              onClick={onClick}
+            >
+              {loading ? (
+                <>
+                  <Loader2 className="animate-spin" />
+                  Loading...
+                </>
+              ) : (
+                "Continue"
+              )}
+            </Button>
+            <AlertDialogCancel>Cancel</AlertDialogCancel>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
+    );
 }
 
 export default AlertDialogBox

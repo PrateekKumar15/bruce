@@ -9,7 +9,7 @@ import React from "react";
 import { toast } from "sonner";
 
 const RecentPrompts = () => {
-  const { prompts, setPage } = usePromptStore();
+  const { prompts, setPage, removePrompt } = usePromptStore();
   const { addMultipleOutlines, setCurrentAiPrompt } = useCreativeAiStore();
 
   const handleEdit = (id: string) => {
@@ -57,6 +57,16 @@ const RecentPrompts = () => {
                   onClick={() => handleEdit(prompt?.id)}
                 >
                   Edit
+                </Button>
+                <Button
+                  variant="destructive"
+                  size="sm"
+                  className="rounded-xl bg-primary-20 dark:hover:bg-gray-700 hover:bg-gray-200 text-primary"
+                  onClick={() => removePrompt(prompt?.id)
+                    
+                  }
+                >
+                  Delete
                 </Button>
               </div>
             </Card>
