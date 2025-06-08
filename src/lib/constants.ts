@@ -1,4 +1,4 @@
-import { House, Share2, LayoutTemplate, Trash2, Settings } from "lucide-react";
+import { House,  Trash2, Settings } from "lucide-react";
 import { ComponentGroup, LayoutGroup, Theme } from "@/lib/types";
 import {
   BlankCardIcon,
