@@ -70,7 +70,7 @@ export const data = {
     },
     {
       title: "Shared",
-      url: "/shared",
+      url: "/share",
       icon: Share2,
     },
     {
