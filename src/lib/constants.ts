@@ -69,16 +69,6 @@ export const data = {
       icon: House,
     },
     {
-      title: "Shared",
-      url: "/share",
-      icon: Share2,
-    },
-    {
-      title: "Templates",
-      url: "/templates",
-      icon: LayoutTemplate,
-    },
-    {
       title: "Trash",
       url: "/trash",
       icon: Trash2,
